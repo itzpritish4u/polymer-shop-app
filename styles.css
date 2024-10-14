@@ -22,8 +22,13 @@ header {
     justify-content: space-between;
     align-items: center;
     font-size: 1.2rem;
-    width: 95%;
+    width: 100%;
     box-sizing: border-box;
+    padding-left: 1rem;
+}
+
+#menu-icon, .cart-icon img {
+    width: 24px;
 }
 
 .buy-option {
@@ -131,7 +136,7 @@ footer {
     body {
         width: 98vw;
     }
-
+    
     .main-body {
         width: 100%;
     }
@@ -151,9 +156,7 @@ footer {
         font-size: 1.2rem;
     }
 
-    #menu-icon, .cart-icon img {
-        width: 24px;
-    }
+    
     .title {
         padding-left: 47%;
     }
@@ -199,5 +202,4 @@ footer {
     .mens-tshirt img, .ladies-tshirt img {
         width: 100%;
     }
-
 }

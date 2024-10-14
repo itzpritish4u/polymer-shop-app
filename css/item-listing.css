@@ -1,0 +1,57 @@
+.buy-option {
+    margin-top: 8px;
+}
+
+.mens-outerwear {
+    height: 28rem;
+}
+
+.item-count {
+    margin-top: 8px;
+    font-size: small;
+    font-weight: lighter;
+}
+
+.outerwear-collections {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    padding: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.men-outwear {
+    width: 100%;
+    padding: 10px;
+    margin: 12px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.men-outwear img {
+    width: 50%;
+    height: 21rem;
+    padding-bottom: 5rem;
+    object-fit: cover;
+}
+
+.men-outwear p {
+    margin: 8px 0;
+}
+
+.men-outwear a {
+    color: black;
+    text-decoration: none;
+}
+
+.men-outwear:hover {
+    transform: scale(1.05);
+}
+
+@media (min-width: 767px) {
+    .outerwear-collections {
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+    }
+}
