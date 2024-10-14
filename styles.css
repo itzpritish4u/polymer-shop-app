@@ -1,0 +1,203 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    width: 766px;
+}
+
+header {
+    width: 97%;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.first-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 95%;
+    box-sizing: border-box;
+}
+
+.buy-option {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 5rem;
+    margin-top: 3.5rem;
+}
+
+.shop-now {
+    border: 2px solid black;
+    padding: 10px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-weight: 250;
+    margin: 3rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.shop-now a {
+    text-decoration: none;
+    color: black;
+}
+
+.category {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu-list {
+    display: none;
+}
+
+.title a {
+    text-decoration: none;
+    color: black;
+}
+
+#menu-icon {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.cart-icon img {
+    width: 2rem;
+}
+
+.mens-outerwear, .ladies-outerwear {
+    height: 32rem;
+    width: 766px;
+}
+
+.mens-outerwear img, .ladies-outerwear img {
+    height: 22rem;
+    object-fit: cover;
+    width: 766px;
+    cursor: pointer;
+}
+
+.mens-ladies-tshirt {
+    display: flex;
+    height: 32rem;
+    width: 766px;
+    margin-bottom: 2rem;
+}
+
+.mens-tshirt, .ladies-tshirt {
+    display: flex;
+    flex-direction: column;
+}
+
+.mens-tshirt img, .ladies-tshirt img {
+    object-fit: cover;
+    width: 383px;
+    margin-bottom: 1rem;
+    height: 22rem;
+    cursor: pointer;
+}
+
+footer {
+    width: 94%;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+    font-weight: 100;
+}
+
+.demo-only {
+    margin-top: 1rem;
+    background-color: black;
+    height: 2rem;
+    width: 8rem;
+    color: white;
+    padding-top: 1rem;
+    margin-bottom: 0;
+}
+
+@media (min-width: 767px) {
+    body {
+        width: 98vw;
+    }
+
+    .main-body {
+        width: 100%;
+    }
+    
+    header, footer {
+        width: 92%;
+        margin-left: 3%;
+    }
+
+    .first-heading {
+        width: 100%;
+        padding: 8px;
+        font-size: 1rem;
+    }
+
+    .first-heading .title {
+        font-size: 1.2rem;
+    }
+
+    #menu-icon, .cart-icon img {
+        width: 24px;
+    }
+    .title {
+        padding-left: 47%;
+    }
+
+    #menu-icon {
+        display: none;
+    }
+
+    .menu-list {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-list-mid {
+        font-weight: 550;
+        width: 460px;
+        display: flex;
+        justify-content: space-between;
+        font-size: small;
+    }
+
+    .menu-list-mid a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .mens-outerwear, .ladies-outerwear {
+        object-fit: cover;
+        width: 90%;
+        padding-left: 5%;
+    }
+    
+    .mens-outerwear img, .ladies-outerwear img {
+        width: 100%;
+    }
+    
+    .mens-ladies-tshirt {
+        width: 90%;
+        padding-left: 5%;
+    }
+    
+    .mens-tshirt img, .ladies-tshirt img {
+        width: 100%;
+    }
+
+}
