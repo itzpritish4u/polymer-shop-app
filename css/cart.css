@@ -1,0 +1,295 @@
+.main-container {
+    margin-left: 1%;
+}
+
+.mycart-text {
+    display: flex;
+    justify-content: center; 
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.mycart-text p {
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.number-of-items {
+    margin-top: 0.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.number-of-items p {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 200;
+}
+
+.item-properties {
+    display: flex;
+    justify-content: flex-end;
+    height: 50%;
+    align-items: center;
+}
+
+.item-name-button {
+    display: flex;
+    justify-content: space-between;
+    height: 50%;
+    align-items: center;
+}
+
+.item-name-button img {
+    width: 1rem;
+}
+
+.item-image img {
+    width:4.5rem;
+}
+
+.item-list {
+    margin-top: 3.5rem;
+    padding: 0 1.5rem;
+}
+
+.first-item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.item-details {
+    width: 90%;
+    margin-left: 3.1rem;
+}
+
+.item-image {
+    width: 10%;
+}
+
+.item-name {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.qty {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: rgb(100, 100, 100);
+}
+
+.size {
+    margin-left: 2.25rem;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: rgb(100, 100, 100);
+}
+
+.amount {
+    margin-left: 2.25rem;
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: rgb(100, 100, 100);
+}
+
+#quantities {
+    border: none;
+    background-color: white;
+    margin-left: 5px;
+}
+
+#cancel-image {
+    display: none;
+}
+
+.total {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.checkout {
+    display: none;
+}
+
+.total-text {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    align-self: center;
+}
+
+.total-amount {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-left: 2rem;
+    margin-right: 1.5rem;
+    align-self: center;
+}
+
+.check-out {
+    padding: 30px;
+    width: 100%;
+    background-color: rgb(35, 35, 57);
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+.check-out a {
+    color: white;
+    font-family: 'Roboto Flex', sans-serif;
+    text-decoration: none;
+    margin-right: 4rem;
+}
+
+.demo-button {
+    display: none;
+}
+
+.checkout a{
+    text-decoration: none;
+    color: black;
+}
+
+@media (min-width:768px) {
+    .main-container {
+        max-width: 1000px;
+        padding: 3vw 1.5vw;
+        margin: 0 auto;
+        height: 100vh;
+    }
+   
+    .main {
+        margin-top: 4rem;
+        width: 100%;
+    }
+   
+    .mycart-text p {
+        font-size: 1rem;
+    }
+ 
+    .item-details {
+        flex: 90%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .first-item {
+        margin-top: 0rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .item-properties {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .item-properties {
+        width: 70%;
+    }
+
+    .item-name-button {
+        width: 30%;
+    }
+
+    .item-name-button img {
+        display: none;
+    }
+
+    .size {
+        min-width: 5rem;
+        width: 6rem;
+    }
+
+    .amount {
+        min-width: 5rem;
+        width: 6rem;
+    }
+
+    .qty {
+        min-width: 7rem;
+        width: 8rem;
+    }
+
+    #cancel-image {
+        display: block;
+        margin-left: 2.5vw;
+        width: 1rem;
+    }
+
+    .total {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+
+    .item-name {
+        font-family: 'Roboto Flex', sans-serif;
+        font-size: 0.85rem;
+        font-weight: 300;
+        margin-left: 0.6rem;
+    }
+
+    .item-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .item-image {
+        flex: 10%;
+    }
+
+    .checkout {
+        border: 2px solid black;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        padding-top: 0.5rem;
+        display: block;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-left: 2rem;
+        cursor: pointer;
+    }
+
+    .check-out {
+        display: none;
+    }
+
+    .demo-button {
+        bottom: 0;
+        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 3rem;
+    }
+
+    footer a {
+        font-family: 'Roboto Flex', sans-serif;
+        text-decoration: none;
+        font-weight: 300;
+        color: rgb(136, 133, 133);
+        font-size: 0.87rem;
+    }
+
+    .demo-only-button {
+        font-family: 'Roboto Flex', sans-serif;
+        margin-top: 0.812rem;
+        width: 5rem;
+        padding: 0.625rem 1.25rem;
+        font-size: 0.87rem;
+        font-weight: 300;
+        background-color: black;
+        color: white;
+    }
+}
