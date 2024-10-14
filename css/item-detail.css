@@ -1,0 +1,245 @@
+#mens-outerwear-id {
+  border-bottom: 2px solid black;
+}
+
+.category {
+  display: none;
+}
+.back img, .cart-icon img {
+  height: 1.5rem;
+}
+.title a {
+  text-decoration: none;
+  color: black;
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+  font-weight: 600;
+}
+.container {
+  position: relative;
+}
+
+.main-container {
+  padding: 0 10vw;
+  height: 150vh;
+}
+.item-name {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 1.3rem;
+  color: black;
+  font-weight: 300;
+  margin-top: 2.2rem;
+}
+.item-image img {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: center;
+}
+.amount {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  color: rgb(90, 89, 89);
+  text-align: left;
+  font-weight: 100;
+}
+.size {
+  border-top: 0.1px solid rgb(145, 143, 143);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.9rem;
+  padding: 1rem 1.25rem;
+  color: rgb(90, 89, 89);
+}
+.size select {
+  margin-left: 2.5rem;
+}
+#sizes {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+
+  flex: 100%;
+  border: none;
+  background-color: white;
+
+  width: 30vw;
+}
+.quantity {
+  border-top: 0.1px solid rgb(147, 145, 145);
+  display: flex;
+  flex-direction: row;
+  font-size: 0.9rem;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  color: rgb(90, 89, 89);
+  border-bottom: 0.1px solid rgb(159, 158, 158);
+}
+.quantity select {
+  margin-left: 1.25rem;
+}
+#quantities {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: black;
+  flex: 100%;
+  border: none;
+  background-color: white;
+
+  width: 30vw;
+}
+.description {
+  margin-top: 2rem;
+}
+.des {
+  font-family: "Roboto Flex", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+}
+.para-content {
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 300;
+  font-size: 0.85rem;
+  line-height: 1.4rem;
+  color: rgb(90, 89, 89);
+}
+.feautures {
+  margin-top: 1.2rem;
+}
+.feauture {
+  color: rgb(90, 89, 89);
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+.unorder-list {
+  margin-top: 1.5vw;
+  color: rgb(90, 89, 89);
+  font-family: "Roboto Flex", sans-serif;
+  font-weight: 300;
+  font-size: 0.85rem;
+  margin-left: 7vw;
+  line-height: 1.5rem;
+}
+.cart-button {
+  display: none;
+}
+.cart {
+  padding: 30px;
+  width: 100%;
+  background-color: rgb(35, 35, 57);
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+.cart a {
+  color: white;
+  font-family: "Roboto Flex", sans-serif;
+  text-decoration: none;
+  text-align: center;
+  margin-right: 4rem;
+}
+.demo-button {
+  display: none;
+}
+
+footer {
+    display: none !important;
+}
+
+@media (min-width: 767px) {
+    .main-container {
+        max-width: 1440px;
+        display: flex;
+        flex-direction: row;
+
+        height: 100vh;
+        justify-content: center;
+    }
+    .item-image {
+        margin: 4rem 3rem;
+        width: 60%;
+    }
+    .image-desc {
+        margin: 2rem 2rem;
+        max-width: 25rem;
+    }
+
+    .item-image img {
+        width: 75%;
+
+        display: flex;
+        margin: 0 auto;
+        min-width: 18rem;
+        min-height: 18rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .unorder-list {
+        margin-left: 3vw;
+    }
+
+    .category {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        gap: 2.5rem;
+    }
+
+    .category a {
+        text-decoration: none;
+        color: black;
+        font-size: 0.8rem;
+        font-weight: 300;
+        font-family: "Roboto Flex", sans-serif;
+    }
+
+    .cart-button {
+        display: block;
+        margin-top: 2rem;
+        padding: 0.5rem 0.1rem;
+    }
+
+    .cart-button a {
+        text-decoration: none;
+        border: 2px solid black;
+        color: black;
+        padding: 0.5rem 1rem;
+        width: 10rem;
+        font-weight: 300;
+        font-family: "Roboto Flex", sans-serif;
+        text-align: center;
+    }
+
+    .cart {
+        display: none;
+    }
+
+    footer {
+        width: 94%;
+        text-align: center;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-weight: 100;
+    }
+
+    .demo-only {
+        margin-top: 1rem;
+        background-color: black;
+        height: 2rem;
+        width: 8rem;
+        color: white;
+        padding-top: 1rem;
+    }
+}
