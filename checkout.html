@@ -2,11 +2,159 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
     <title>Checkout</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/checkout.css">
 </head>
 <body>
-    
+    <section class="container">
+        <header>
+            <div class="first-heading">
+                <span id="menu-icon" class="material-symbols-outlined">menu</span>
+                <span class="title"><a href="#">S H O P</a></span>
+                <span class="cart-icon">
+                    <a href="cart.html">
+                        <img src="img/cart.png">
+                    </a>
+                </span>
+            </div>
+        </header>
+        <div class="main-container">
+            <div class="checkout">
+                <p class="checkout-text">Checkout</p>
+                <p class="checkout-subtext">Shop is a demo app - form data will not be sent</p>
+            </div>
+            <div class="informtion">
+                <div class="person-details">
+                    <div class="account-info">
+                        <h2>Account Information</h2>
+                        <div class="input-label user-email">
+                        <input type="email" id="e-mail" name="emails"  required>
+                        <label for="e-mail">Email</label>
+                    </div>
+                        <div class="input-label phone-num">
+                        <input type="tel" id="Phone-No">
+                        <label for="Phone-No">Phone Number</label>
+                    </div>
+                    </div>
+                    <div class="shipping-add">
+                        <h2>Shipping Address</h2>
+                        <div class="input-label addrs">
+                        <input type="text" id="address" name="Address" required>
+                        <label for="address">Address</label>
+                    </div>
+                    <div class="input-label">
+                        <input type="text" id="city" name="City">
+                        <label for="city">City</label>
+                    </div>
+                        <div class="state-pin">
+                            <div class="input-label state">
+                                <input type="text" id="state" name="State" required>
+                                <label for="state">State/Province</label>
+                        </div>
+                            <div class="input-label zip-code">
+                            <input type="text" id="zipcode" name="postlcode" required>
+                            <label for="zipcode">Zip/Postal code</label>
+                        </div>
+                        </div>
+                        <div class="country">
+                        <label for="country">Country</label>
+                        <select name="countries" id="country">
+                            <option value="0">United States</option>
+                            <option value="1">Canada</option>
+                        </select>
+                    </div>
+                    </div>
+                    <div class="billing">
+                        <h2>Billing Address</h2>
+                        <input type="checkbox" id="bill-addrss">
+                        <label for="bill-addrss">Use different billing address</label>
+                    </div>
+                </div>
+                <div class="payment-desc">
+                    <div class="payment-method">
+                        <h2>Payment Method</h2>
+                       <div class="input-label card-hold">
+                        <input type="text" id="card-holder" name="Cardholder-Name" required>
+                        <label for="text">Cardholder Name</label>
+                    </div>
+                    <div class="input-label card-num">
+                        <input type="text" id="card-no" name="Card-Number" required>
+                        <label for="card-no">Card Number</label>
+                    </div>
+                        <div class="expiry-date">
+                           <div class="month">
+                            <label for="expiry">Expiry</label>
+                            <select name="expiry-month" id="expiry">
+                                <option value="0">JAN</option>
+                                <option value="1">FEB</option>
+                                <option value="2">MAR</option>
+                                <option value="3">APR</option>
+                                <option value="4">MAY</option>
+                                <option value="5">JUN</option>
+                                <option value="6">JUL</option>
+                                <option value="7">AUG</option>
+                                <option value="8">SEP</option>
+                                <option value="9">OCT</option>
+                                <option value="10">NOV</option>
+                                <option value="11">DEC</option>
+                            </select>
+                        </div>
+                        <div class="year">
+                            <select name="expiry-year" id="expiry">
+                                <option value="0">2016</option>
+                                <option value="1">2017</option>
+                                <option value="0">2018</option>
+                                <option value="1">2019</option>
+                                <option value="2">2020</option>
+                                <option value="3">2022</option>
+                                <option value="4">2023</option>
+                                <option value="5">2024</option>
+                                <option value="6">2025</option>
+                                <option value="7">2026</option>
+                            </select>
+                        </div>
+                           <div class="input-label cvv-num">
+                            <input type="text" id="cvv" name="cvv-no" required>
+                            <label for="cvv">CVV</label>
+                        </div>
+                        </div>
+                    </div>
+                        <div class="order-sum">
+                            <h2>Order Summary</h2>
+                            <div class="item">
+                            <div class="item-one eachitem">
+                                <p class="item-name">Tri-blend Full-Zip Hoodie</p>
+                                <p class="item-price">$52.20</p>
+                            </div>
+                            <div class="item-two eachitem">
+                                <p class="item-name">Fleece Full-Zip Hoodie</p>
+                                <p class="item-price">$45.65</p>
+                            </div>
+                            <div class="item-three eachitem">
+                                <p class="item-name">Jacquard-Knit Full-Zip Fleece</p>
+                                <p class="item-price">$74.90</p>
+                            </div>
+                            <div class="total-amount eachitem">
+                                <p class="item-name">Total</p>
+                                <p class="item-price">$172.75</p>
+                            </div>
+                            <div class="place-order">
+                                <p class="order-button">PLACE ORDER</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="made-by-polymer">Made By Polymer</div>
+            <div class="demo-only">Demo Only</div>
+        </footer>
+    </section>
 </body>
+
 </html>

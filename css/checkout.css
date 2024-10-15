@@ -1,0 +1,298 @@
+.main-container {
+    width: 90%;
+    padding: 1rem;
+    font-weight: 300;
+}
+
+.checkout {
+    text-align: center;
+}
+
+.checkout-text {
+    color: black;
+    font-size: 1rem;
+}
+
+.checkout-subtext {
+    color: rgb(134, 132, 132);
+    font-size: 0.8rem;
+}
+
+.main-container h2 {
+    margin-bottom: 1rem;
+    color: black;
+    font-size: 0.85rem;
+}
+
+.input-label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 4rem;
+}
+
+.informtion {
+   margin-left: 1rem;
+   margin-right: 0.5rem;
+}
+
+.input-label input {
+    border: 0;
+    border-bottom: 1px solid rgb(135, 134, 134);;
+    outline: none;
+    padding: 0.5rem;
+    width: 100%;
+}
+
+.input-label label {
+    position: absolute;
+    color: rgb(135, 134, 134);
+    font-family: 'Roboto Flex', sans-serif;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.input-label input:focus + label {
+    font-size: 0.9rem;
+    top: -0.1rem;
+    color: black;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+.account-info {
+    margin-top: 1rem;
+}
+
+.country {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.shipping-add {
+    margin-top: 1rem;
+}
+
+.shipping-add input {
+    border: 0;
+    border-bottom: 0.5px solid rgb(130, 128, 128);
+    padding: 1rem;
+}
+
+.state-pin {
+    display: flex;
+}
+
+#state {
+    width: 80%;
+}
+
+.state {
+   width: 50%;
+}
+
+.zip-code {
+    width: 50%;
+}
+
+#country {
+    margin-top: 1rem;
+    width: 100%;
+    border: 0;
+    background-color: white;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+.billing h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.payment-method h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#card-holder {
+    width: 100%;
+    border: 0;
+    border-bottom: 0.5px solid rgb(130, 128, 128);
+    padding: 1rem;
+}
+
+#card-no {
+    width: 100%;
+    border: 0;
+    border-bottom: 0.5px solid rgb(130, 128, 128);
+    padding: 1rem;
+}
+
+.expiry-date {
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 4rem;
+}
+
+.month {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+
+.year {
+    display: flex;
+    width: 33%;
+}
+
+.cvv-num {
+    display: flex;
+    bottom: -0.96rem;
+    width: 33%;
+}
+
+#expiry[name="expiry-month"] {
+    width: 90%;
+    border: 0;
+    background-color: white;
+    border-bottom: 1px solid rgb(130, 128, 128);
+    padding:  0.5rem;
+}
+
+#expiry[name="expiry-year"] {
+    width: 90%;
+    border: 0;
+    background-color: white;
+    border-bottom: 1px solid rgb(130, 128, 128);
+    padding: 0.5rem;
+}
+
+#cvv {
+    width: 90%;
+    border: 0;
+    background-color: white;
+    border-bottom: 1px solid rgb(130, 128, 128);
+    padding: 0.5rem;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+}
+
+.item-name,.item-price {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.eachitem {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order-sum h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.total-amount {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.order-button {
+    display: none;
+}
+
+.order-place {
+    padding: 1.4rem;
+    width: 100%;
+    background-color: rgb(35, 35, 57);
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+.order-place a {
+    color: white;
+    font-family: 'Roboto Flex', sans-serif;
+    text-decoration: none;
+    margin-right: 4rem;
+}
+
+.demo-button {
+    display: none;
+}
+
+.billing label {
+    margin-left: 1rem;
+}
+
+.billing input {
+    outline: 1px solid black;
+}
+
+@media (min-width:767px) {
+    .main-container{
+        margin: 5rem auto 0 auto;
+        max-width: 950px;
+    }
+
+    .informtion {
+        display: flex;
+        margin: 3rem auto 0 auto;
+    }
+
+    .person-details {
+        width: 48%;
+    }
+
+    .menu {
+        visibility: hidden;
+    }
+    .payment-desc {
+        margin-left: 5rem;
+        width: 52%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .account-info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .shipping-add {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .payment-method {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .payment-method h2 {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .order-button {
+        margin-top: 1.5rem;
+        display: block;
+        width: 8rem;
+        padding: 0.5rem 1rem;
+        text-align: center;
+        border: 2px solid black;
+    }
+
+    .order-place {
+        display: none;
+    }
+}
