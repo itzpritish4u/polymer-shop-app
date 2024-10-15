@@ -286,10 +286,12 @@
     .order-button {
         margin-top: 1.5rem;
         display: block;
-        width: 8rem;
+        width: 12rem;
+        height: 2.5rem;
         padding: 0.5rem 1rem;
         text-align: center;
         border: 2px solid black;
+        cursor: pointer;
     }
 
     .order-place {
