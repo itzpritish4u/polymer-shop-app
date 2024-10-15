@@ -58,13 +58,4 @@ This is a mobile-first, responsive clone of the Polymer Shop website. The projec
 └── styles.css
 ```
 
-## .gitignore
-
-The `.gitignore` file includes:
-- The `node_modules/` folder (if applicable)
-- The `dist/` folder for any build outputs
-- Any temporary files like `.DS_Store`, `*.log`, etc.
-
-
-  
 ---
